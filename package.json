@@ -1,0 +1,14 @@
+{
+  "name": "projeto_dois",
+  "version": "0.0.1",
+  "description": "Um projeto para o FCC-SP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fabio <fabiocostadev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "pug": "^2.0.0-rc.2"
+  }
+}
