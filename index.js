@@ -3,6 +3,6 @@ var fs = require('fs')
 // Pega o pacote instalado pug
 var pug = require('pug')
 //Retorna uma função que sabe transformar nosso template em HTML
-var compileFunction = pug.compileFile('template.pug')
+var compileFunction = pug.compileFile('template.pug', {pretty: true})
 // Escreve em um arquivo chamado  resultado.html
 fs.writeFileSync('resultado.html', compileFunction())
