@@ -9,6 +9,7 @@
   "author": "fabio <fabiocostadev@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "node-sass": "^4.5.3",
     "pug": "^2.0.0-rc.2"
   }
 }
