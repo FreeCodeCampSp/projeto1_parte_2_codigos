@@ -1,6 +1,9 @@
+$general-color: purple;
+$highlight-color: blue;
+
 ul {
-  color: red;
+  color: $general-color;
   b {
-    color: green;
+    color: $highlight-color;
   }
 }
