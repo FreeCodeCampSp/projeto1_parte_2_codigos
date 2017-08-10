@@ -2,7 +2,8 @@
 var fs = require('fs')
 // Pega o pacote instalado pug
 var pug = require('pug')
-//Retorna uma função que sabe transformar nosso template em HTML
+// Pega o pacote instalado node-sass
+var sass = require('node-sass');
 
 var allEvents = [
   {
@@ -26,6 +27,14 @@ var allEvents = [
     date: '09/06/2900'
     }
 ]
+
+//Retorna uma função que sabe transformar nosso template em HTML
 var compileFunction = pug.compileFile('template.pug', {pretty: true})
 // Escreve em um arquivo chamado  resultado.html
 fs.writeFileSync('resultado.html', compileFunction({allEvents: allEvents}))
+// Converte o SCSS para CSS
+var cssResult = sass.renderSync({
+  file: 'index.scss'
+})
+// Escreve em um artigo chamado index.css
+fs.writeFileSync('index.css', cssResult.css)
